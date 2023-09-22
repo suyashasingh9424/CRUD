@@ -1,0 +1,56 @@
+<table class="student-table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Password</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><%= @student.name %></td>
+      <td><%= @student.email %></td>
+      <td><%= @student.password %></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Comments</h2>
+<table class="student-table">
+  <thead>
+    <tr>
+      <th>Commentor</th>
+      <th>Comment</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @student.comments.each do |comment| %>
+      <tr>
+        <td><%= comment.commentor %></td>
+        <td><%= comment.comment %></td>
+        <td>
+        <% if comment.image.attached? %>
+        <%= image_tag comment.image, class: 'comment-image' %>
+          <% end %>
+        </td>
+        <td class="actions">
+        <%= link_to 'Show', student_comment_path(@student, comment, return_to: request.fullpath), class: 'btn btn-primary' %>
+
+          <br>
+          </br>
+          <%= link_to 'Destroy', student_comment_path(@student, comment), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+<br>
+<%= link_to 'Create a Comment', new_student_comment_path(@student), class: 'btn btn-primary' %>
+<%= link_to 'Show All Comments', student_comments_path(@student), class: 'btn btn-secondary' %>
+<br>
+<br>
+<%= link_to "Back", students_path, class: 'btn btn-secondary' %> 
+<%= link_to "Edit", edit_student_path(@student), class: 'btn btn-primary' %>

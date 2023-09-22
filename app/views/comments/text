@@ -1,0 +1,13 @@
+<%= form_with(model: [@student, @student.comments.build], local: true) do |f| %>
+    <div class="form-field">
+      <%= f.label :commentor, class: 'form-label' %>
+      <%= f.text_field :commentor, class: 'form-control' %>
+    </div>
+  
+    <div class="form-field">
+      <%= f.label :comment, class: 'form-label' %>
+      <%= f.text_area :comment, class: 'form-control' %>
+    </div>
+  
+    <%= f.submit 'Submit Comment', class: 'form-submit' %>
+  <% end %>

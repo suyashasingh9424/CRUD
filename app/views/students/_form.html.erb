@@ -1,0 +1,23 @@
+<div class="form-container">
+  <h1>Details Form</h1>
+  <%= form_with model: @student do |form| %>
+    <div>
+      <%= form.label :name, class: 'form-label' %><br>
+      <%= form.text_field :name, class: 'form-field' %>
+    </div>
+    <div>
+      <%= form.label :email, class: 'form-label' %><br>
+      <%= form.email_field :email, class: 'form-field' %>
+    </div>
+    <div>
+      <%= form.label :password, class: 'form-label' %><br>
+      <%= form.password_field :password, class: 'form-field' %>
+    </div>
+    <div>
+      <%= form.submit 'Register', class: 'form-submit' %>
+    </div>
+  <% end %>
+</div>
+
+
+

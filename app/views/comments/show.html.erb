@@ -1,0 +1,12 @@
+<h1> Details of comments</h1>
+
+<p> <strong>commentor : </strong><%= @comment.commentor %> </p>
+<p> <strong>comment : </strong><%= @comment.comment%> </p>
+    
+<% if @comment.image.attached? %>
+<%= image_tag @comment.image, class: 'comment-image' %>
+  <%= link_to 'Show Image', rails_blob_path(@comment.image, disposition: 'inline'), class: 'btn btn-success' %>
+<% end %>
+<%= link_to 'Back', student_path(@student), class: 'btn btn-primary' %>
+
+

@@ -1,0 +1,19 @@
+
+
+<%= form_for([@student, @comment], html: { multipart: true }) do |f| %>
+
+    <div class="form-field">
+      <%= f.label :commentor, class: 'form-label' %>
+      <%= f.text_field :commentor, class: 'form-control' %>
+    </div>
+  
+    <div class="form-field">
+      <%= f.label :comment, class: 'form-label' %>
+      <%= f.text_area :comment, class: 'form-control' %>
+    </div>
+    <div class="form-field">
+      <%= f.label :image, class: 'form-label' %>
+      <%= f.file_field :image, class: 'form-control' %>
+    </div>
+    <%= f.submit %>
+  <% end %>

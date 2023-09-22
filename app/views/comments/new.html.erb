@@ -1,0 +1,7 @@
+<h2>Add a comment:</h2>
+<div class="form-container">
+<%= render partial: 'comments/form', locals: { student: @student, comment: @comment } %>
+</div>
+<%= link_to "Back", student_path(@student), class: 'back-button' %>
+
+

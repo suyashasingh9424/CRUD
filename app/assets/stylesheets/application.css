@@ -1,0 +1,321 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ 
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+  }
+  
+  
+  th {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    color: #333;
+  }
+  
+  
+  td {
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  /* Style for buttons */
+  .btn {
+    display: inline-block;
+    padding: 4px 12px;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    /*line-height: 1.42857143;*/
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    transition: all 0.2s;
+  }
+  
+  .btn-primary {
+    background-color: #28a745; /* Green color, you can adjust this */
+  color: #fff; /* Text color */
+  border: none;
+  padding: 8px 16px; /* Adjust padding as needed */
+  border-radius: 4px; /* Rounded corners */
+  text-decoration: none;
+  font-size: 14px; /* Adjust font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+  }
+  
+  .btn-danger {
+    background-color: #28a745; /* Green color, you can adjust this */
+  color: #fff; /* Text color */
+  border: none;
+  padding: 8px 16px; /* Adjust padding as needed */
+  border-radius: 4px; /* Rounded corners */
+  text-decoration: none;
+  font-size: 14px; /* Adjust font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+  }
+  
+  .btn-secondary {
+    background-color: #28a745; /* Green color, you can adjust this */
+  color: #fff; /* Text color */
+  border: none;
+  padding: 8px 16px; /* Adjust padding as needed */
+  border-radius: 4px; /* Rounded corners */
+  text-decoration: none;
+  font-size: 14px; /* Adjust font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+  }
+  
+  table.student-table {
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    margin: 20px 0;
+    color: #333;
+  }
+
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+
+.form-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-submit {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.form-submit:hover {
+  background-color: #0056b3;
+}
+
+.back-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
+
+
+.form-container {
+  background-color: #f7f7f7; 
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0;
+}
+
+
+th {
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+  color: #333;
+}
+
+
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 12px;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background-color: #28a745; /* Green color, you can adjust this */
+  color: #fff; /* Text color */
+  border: none;
+  padding: 8px 16px; /* Adjust padding as needed */
+  border-radius: 4px; /* Rounded corners */
+  text-decoration: none;
+  font-size: 14px; /* Adjust font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.form-container {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+
+.form-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+
+.form-submit {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.form-submit:hover {
+  background-color: #0056b3;
+}
+
+
+.form-container {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+
+.form-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+
+.form-submit {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.form-submit:hover {
+  background-color: #0056b3;
+}
+
+.comment-image {
+  max-width: 20%; /* Ensure image doesn't exceed its container */
+  height: auto;    /* Maintain aspect ratio */
+}
+
+/* app/assets/stylesheets/application.css */
+/* You can adjust the styles to match your design preferences */
+
+/* Style for the "Show Image" button */
+.btn-success {
+  background-color: #28a745; /* Green color, you can adjust this */
+  color: #fff; /* Text color */
+  border: none;
+  padding: 8px 16px; /* Adjust padding as needed */
+  border-radius: 4px; /* Rounded corners */
+  text-decoration: none;
+  font-size: 14px; /* Adjust font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+.btn-success:hover {
+  background-color: #218838; /* Darker green color on hover */
+}
