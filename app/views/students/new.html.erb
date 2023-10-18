@@ -1,1 +1,11 @@
 <%= render "form" %>
+<% if @student.errors.any? %>
+  <div id="error-messages">
+    <h2>Validation Errors:</h2>
+    <ul>
+      <% @student.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>

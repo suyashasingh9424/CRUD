@@ -13,10 +13,15 @@ class StudentsController < ApplicationController
 
           def create
             @student = Student.new(student_params)
+            
             if @student.save
-              redirect_to students_path
+              SendEmailJob.new(@student).enqueue(wait: 20.seconds)
+
+               redirect_to students_path
+              # redirect_to root_path
             else
-               render plain: "error is occured"
+              flash.now[:error] = "Your Student  form had some errors. Please check the form and resubmit."
+              render :new
             end
 
          end   
@@ -25,6 +30,7 @@ class StudentsController < ApplicationController
             @student = Student.find(params[:id])
         end      
             def update
+              
             @student = Student.find(params[:id])      
               if @student.update(student_params)
               redirect_to students_path

@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+  <h1>Welcome to Our page</h1>
+<p>Hi <%= @student.name %>,</p>
+<p>students details</p>
+<ul>
+  <li>Name: <%= @student.name %></li>
+  <li>Email: <%= @student.email %></li>
+  <% if @student.image.attached? %>
+    <li>Image: <%= image_tag rails_blob_path(@student.image, only_path: true) %></li>
+  <% end %>
+</ul>
+
+<p>Ruby is a dynamic, object-oriented programming language known for its simplicity and elegance. 
+Created by Yukihiro Matsumoto in the mid-1990s, Ruby is valued for its ease of use and readability. 
+It's often associated with the Ruby on Rails framework, which has greatly contributed to its popularity in web development.
+ Ruby's flexibility and developer-friendly syntax make it an ideal choice for a wide range of applications, 
+ from web development to scripting and automation</p>
+
+    </p>
+  </body>
+</html>

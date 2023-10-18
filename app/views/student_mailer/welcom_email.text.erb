@@ -1,0 +1,17 @@
+You got a new mail from <%= @student.name %>!
+===============================================
+
+student Details:
+--------------------------
+
+Name: <%= @student.name %>
+Email: <%= @student.email %>
+<% if @student.image.attached? %>
+<li>Image: <%= image_tag rails_blob_path(@student.image, only_path: true) %></li>
+<% end %>
+
+<p><Ruby is a dynamic, object-oriented programming language known for its simplicity and elegance.
+ Created by Yukihiro Matsumoto in the mid-1990s, Ruby is valued for its ease of use and readability. 
+ It's often associated with the Ruby on Rails framework, which has greatly contributed to its popularity in web development. 
+ Ruby's flexibility and developer-friendly syntax make it an ideal choice for a wide range of applications, 
+ from web development to scripting and automation/p>
